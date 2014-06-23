@@ -1,0 +1,80 @@
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{babel}
+\begin{document}
+
+\title{README for ``Interactive multiple model ensemble Kalman filter for traffic estimation and incident detection''. }
+
+
+\author{Ren Wang and Daniel B. Work}
+\maketitle
+\begin{abstract}
+This document describes the implementation of the Interactive multiple model (IMM) ensemble Kalman filter(EnKF) introduced in the article
+'Interactive multiple model ensemble Kalman filter for traffic estimation and incident detection'' by Wang and Work,
+submitted to the IEEE Transaction on Intelligent Transportation Systems Conference
+A preprint of the article is available for download on the second
+author's website. The source code is hosted at \url{https://github.com/renwang/IMM_EnKF_Traffic_Estimation_Incident_Detection}.
+\end{abstract}
+
+\section{License}
+
+This software is licensed under the \emph{University of Illinois/NCSA
+Open Source License}:
+
+\begin{center}
+Copyright (c) 2014 The Board of Trustees of the University of Illinois.
+All rights reserved.
+\par\end{center}
+
+\begin{center}
+Developed by: Department of Civil and Environmental Engineering University
+of Illinois at Urbana-Champaign \url{https://github.com/renwang/IMM_EnKF_Traffic_Estimation_Incident_Detection}
+\par\end{center}
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the \textquotedbl{}Software\textquotedbl{}),
+to deal with the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimers. Redistributions
+in binary form must reproduce the above copyright notice, this list
+of conditions and the following disclaimers in the documentation and/or
+other materials provided with the distribution. Neither the names
+of the Department of Civil and Environmental Engineering, the University
+of Illinois at Urbana-Champaign, nor the names of its contributors
+may be used to endorse or promote products derived from this Software
+without specific prior written permission.
+
+THE SOFTWARE IS PROVIDED \textquotedbl{}AS IS\textquotedbl{}, WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH
+THE SOFTWARE.
+
+
+%\section{Publishing results using this software}
+
+%We kindly ask any future publications using this software include
+%a reference to the following publication:
+
+%R. Wang and D. B. Work, ``Application of robust optimization in matrix-based LCI for decision making under uncertainty'', 
+ %\emph{Networks and Heterogeneous Media}, 2013.
+
+\section{Running the code}
+The provided .py files can be used to reproduce the results presented in the publication.
+\begin{enumerate}
+\item Generate figure two and figure three (a),( c) two by running
+\begin{verbatim}IMM_EnKF.py\end{verbatim}
+ \item Generate figure three (b), (d) by running
+ \begin{verbatim}MM_EnKF.py\end{verbatim}
+\end{enumerate}
+The simulation results for different probe headways can be obtained by changing the self.PR value in the GPSvehicle class
+\end{document}
